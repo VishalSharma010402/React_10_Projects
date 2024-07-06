@@ -4,11 +4,26 @@
 }
 
 body{
+    background-color: var(--main-col);
+    color: var(--text-col);
     font-family: 'Poppins', sans-serif;
 }
 :root{
     --red:#d01c28;
     --grey:#2e2e2e;
+}
+.light-theme{
+    --main-col:rgb(255, 255, 255);
+    --text-col:rgb(0, 0, 0);
+    --img-bg:rgb(255, 255, 255);
+    --logo-bg:rgb(255, 255, 255);
+    
+}
+.dark-theme{
+    --main-col:rgb(0, 0, 0);
+    --text-col:rgb(255, 255, 255);
+    --img-bg:rgb(0, 0, 0);
+    --logo-bg:rgb(255, 255, 255);
 }
 
 button{
@@ -23,8 +38,13 @@ button{
     max-width: 1280px;
     margin: 0 auto;
 }
+.logo>img{
+    background-color: var(--logo-bg);
 
+}
 nav{
+    background-color: var(--main-col);
+    color: var(--text-col);
     display: flex;
     justify-content: space-between;
     align-items: center ;
@@ -54,12 +74,13 @@ nav ul li{
 }
 .hero h1{
     font-weight: 800;
+    color: var(--text-col );
     font-size: 108px;
     line-height: 102px;
 }
 .hero p{
     font-weight:600;
-    color: var(--grey );
+    color: var(--text-col );
     max-width: 400px;
 } 
 .hero-button {
@@ -67,6 +88,12 @@ nav ul li{
     gap: 40px;
     font-size: 25px;
 }
+/* .themebtn button{
+    width: auto;
+    height: auto;
+    color: var(--main-col);
+    background-color: var(--text-col);
+} */
 .second-btn{
     background: transparent;
     border: 1px solid var(--grey);
@@ -84,4 +111,7 @@ nav ul li{
 .brand-icons{
     display: flex;
     gap: 16px
+}
+.hero-image{
+    background-color: var(--img-bg);
 }
